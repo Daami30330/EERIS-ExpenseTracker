@@ -14,12 +14,6 @@ A full-stack web application built for the EERIS-17 project that helps users man
 
 ---
 
-## 📸 Screenshot
-
-![App Screenshot](assets/Picture1.png)
-
----
-
 ## ✅ Features
 
 - 🔐 User registration and login
