@@ -4,6 +4,18 @@ A full-stack web application built for the EERIS-17 project that helps users man
 
 ---
 
+## 📸 App Screenshots
+
+<img src="assets/main.png" width="600"/>
+<p align="center"><i>Main Screen</i></p>
+
+<img src="assets/receipt.png" width="600"/>
+<p align="center"><i>Receipt Upload Screen</i></p>
+
+<img src="assets/admin.png" width="600"/>
+<p align="center"><i>Admin Panel</i></p>
+
+
 ## 🚀 Tech Stack
 
 - **Frontend:** React.js + Tailwind CSS
