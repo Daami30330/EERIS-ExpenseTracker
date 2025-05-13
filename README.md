@@ -16,7 +16,7 @@ A full-stack web application built for the EERIS-17 project that helps users man
 
 ## 📸 Screenshot
 
-![App Screenshot](Screenshot%202025-04-27%20202003.png)
+![App Screenshot](assets/Picture1.png)
 
 ---
 
