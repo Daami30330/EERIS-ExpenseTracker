@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# 💰 EERIS Expense Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application built for the EERIS-17 project that helps users manage their expenses, track financial history, and export reports. Includes secure user authentication, audit logging, and PDF generation.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+- **Frontend:** React.js + Tailwind CSS
+- **Backend:** Flask (Python)
+- **Database:** PostgreSQL
+- **Authentication:** JSON Web Tokens (JWT)
+- **Extras:** PDF generation with ReportLab
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📸 Screenshot
 
-### `npm test`
+![App Screenshot](Screenshot%202025-04-27%20202003.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✅ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🔐 User registration and login
+- 🧾 Add, edit, and delete expense entries
+- 📊 Filter expenses by category or date
+- 📜 Full audit log of user actions
+- 📄 Export expense reports as PDFs
+- 🎨 Clean, responsive UI built with Tailwind
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Folder Structure
+EERIS-ExpenseTracker/
+├── backend/ # Flask backend (API, models, routes)
+├── src/ # React frontend components
+├── public/ # Static files
+├── uploads/ # Uploaded receipt images
+├── .gitignore
+├── package.json
+├── README.md
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🐍 1. Backend Setup (Flask)
+cd backend
+python -m venv venv
+venv\Scripts\activate           # or source venv/bin/activate for macOS/Linux
+pip install -r requirements.txt
+python app.py
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Make sure PostgreSQL is running and configure .env with your DB URL and JWT secret.
 
-## Learn More
+⚛️ 2. Frontend Setup (React)
+cd ..
+npm install
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+✍️ Author
+Imaad Fahimuddin
+Full-stack developer and recent CS graduate
+Built as a final project for my SOftware Engineer class
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📜 License
+This project is intended for educational/demo use only.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
