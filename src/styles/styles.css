@@ -1,0 +1,303 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container, .main-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.input-field {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 16px;
+    text-align: center;             /* ✅ Center input & select text */
+    text-align-last: center;        /* ✅ Center selected option in <select> */
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.main-container {
+    width: 75vw; /* 📈 Wider container */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.form-section {
+    width: 65%; /* 📈 Bigger form */
+}
+
+.upload-section {
+    width: 30%; /* 📉 Smaller upload section */
+}
+
+
+/* Subtle Division Line */
+.main-container::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 80%;
+    background-color: #ddd;
+    left: 67.5%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.previous-uploads-button {
+    width: 50%;
+    margin-top: 1vh;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.items-container {
+    max-height: 350px; /* was 200px */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+
+.item-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px; /* more breathing space */
+}
+
+
+.item-name {
+    flex: 5;  /* Wider name input */
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-width: 0;
+    text-align: center;         /* ✅ Horizontal center */
+    display: flex;              /* ✅ Add flexbox */
+    align-items: center;        /* ✅ Vertical center */
+    justify-content: center;    /* ✅ Horizontal center again */
+}
+
+
+.item-amount {
+    flex: 1; /* Smaller amount input */
+    padding: 10px;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-width: 0;
+    text-align: center;         /* ✅ Horizontal center */
+    display: flex;              /* ✅ Add flexbox */
+    align-items: center;        /* ✅ Vertical center */
+    justify-content: center;    /* ✅ Horizontal center again */
+}
+
+
+.add-item-button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-item-button:hover {
+    background-color: #218838;
+}
+
+.accept-button, .reject-button {
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.accept-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.accept-button:hover {
+    background-color: #218838;
+}
+
+.reject-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reject-button:hover {
+    background-color: #c82333;
+}
+
+.logout-container {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+    height: 40px;
+    width: 5vw;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+.remove-item-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.remove-item-button:hover {
+    background-color: darkred;
+}
+
+.total-amount {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.upload-spinner {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.spinner {
+    margin: 10px auto;
+    width: 36px;
+    height: 36px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.uploaded-image-preview {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.uploaded-image-preview img {
+    max-width: 100%;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+input::placeholder,
+select::placeholder {
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    display: inline-block;
+    width: auto;
+    min-width: 100px;
+    max-width: 120px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
