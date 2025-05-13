@@ -57,7 +57,7 @@ npm start
 ✍️ Author
 Imaad Fahimuddin
 Full-stack developer and recent CS graduate
-Built as a final project for my SOftware Engineer class
+Built as a final project for my Software Engineer class
 
 📜 License
 This project is intended for educational/demo use only.
