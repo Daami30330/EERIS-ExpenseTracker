@@ -6,6 +6,9 @@ A full-stack web application built for the EERIS-17 project that helps users man
 
 ## 📸 App Screenshots
 
+<img src="assets/Login.png" width="600"/>
+<p align="center"><i>Login Screen</i></p>
+
 <img src="assets/main.png" width="600"/>
 <p align="center"><i>Main Screen</i></p>
 
